@@ -10,3 +10,4 @@ C:\Users\dcmun\Documents\C#\ChessGame\Chess\obj\Debug\netcoreapp3.1\ChessGame.cs
 C:\Users\dcmun\Documents\C#\ChessGame\Chess\obj\Debug\netcoreapp3.1\ChessGame.dll
 C:\Users\dcmun\Documents\C#\ChessGame\Chess\obj\Debug\netcoreapp3.1\ChessGame.pdb
 C:\Users\dcmun\Documents\C#\ChessGame\Chess\obj\Debug\netcoreapp3.1\ChessGame.genruntimeconfig.cache
+C:\Users\dcmun\Documents\C#\ChessGame\Chess\obj\Debug\netcoreapp3.1\ChessGame.csprojAssemblyReference.cache
