@@ -8,9 +8,9 @@ namespace Chess
         static void Main(string[] args)
         {
 
-            Posicao p = new Posicao(3,4);
+            Tabuleiro.Tabuleiro tab = new Tabuleiro.Tabuleiro();
 
-            Console.WriteLine(p);
+            Console.WriteLine();
 
         }
     }
