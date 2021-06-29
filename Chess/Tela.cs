@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Tabuleiro;
+using Board;
 
-namespace Chess
+namespace ChessGame
 {
     class Tela
     {
 
-        public static void ImprimirTabuleiro(Tabuleiro.Tabuleiro tab)
+        public static void ImprimirTabuleiro(Tabuleiro tab)
         {
 
             for (int i = 0; i < tab.Linhas; i++)

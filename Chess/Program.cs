@@ -1,14 +1,18 @@
 ﻿using System;
-using Tabuleiro;
+using Board;
+using Board.Enums;
+using Chess;
 
-namespace Chess
+namespace ChessGame
 {
     class Program
     {
         static void Main(string[] args)
         {
 
-            Tabuleiro.Tabuleiro tab = new Tabuleiro.Tabuleiro(8, 8);
+            Tabuleiro tab = new Tabuleiro(8, 8);
+
+            tab.ColocarPeca(new Rei(tab, Cor.Branca), new Posicao(1, 1));
 
             Tela.ImprimirTabuleiro(tab);
 

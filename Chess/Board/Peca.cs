@@ -1,6 +1,6 @@
-﻿using Tabuleiro.Enums;
+﻿using Board.Enums;
 
-namespace Tabuleiro
+namespace Board
 {
     class Peca
     {
@@ -9,14 +9,9 @@ namespace Tabuleiro
         public int QtdeMovimentos { get; protected set; }
         public Tabuleiro Tabuleiro { get; protected set; }
 
-        public Peca()
+        public Peca(Tabuleiro tabuleiro, Cor cor)
         {
-
-        }
-
-        public Peca(Posicao posicao, Cor cor, Tabuleiro tabuleiro)
-        {
-            Posicao = posicao;
+            Posicao = null;
             Cor = cor;
             Tabuleiro = tabuleiro;
             QtdeMovimentos = 0;

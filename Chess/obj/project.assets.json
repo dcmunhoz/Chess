@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dcmun\\Documents\\C#\\ChessGame\\Chess\\Chess.csproj",
-      "projectName": "Chess",
-      "projectPath": "C:\\Users\\dcmun\\Documents\\C#\\ChessGame\\Chess\\Chess.csproj",
+      "projectUniqueName": "C:\\Users\\dcmun\\Documents\\C#\\ChessGame\\Chess\\ChessGame.csproj",
+      "projectName": "ChessGame",
+      "projectPath": "C:\\Users\\dcmun\\Documents\\C#\\ChessGame\\Chess\\ChessGame.csproj",
       "packagesPath": "C:\\Users\\dcmun\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\dcmun\\Documents\\C#\\ChessGame\\Chess\\obj\\",
       "projectStyle": "PackageReference",
