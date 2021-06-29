@@ -8,9 +8,10 @@ namespace Chess
         static void Main(string[] args)
         {
 
-            Tabuleiro.Tabuleiro tab = new Tabuleiro.Tabuleiro();
+            Tabuleiro.Tabuleiro tab = new Tabuleiro.Tabuleiro(8, 8);
 
-            Console.WriteLine();
+            Tela.ImprimirTabuleiro(tab);
+
 
         }
     }
