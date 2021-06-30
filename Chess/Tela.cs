@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Board;
+using Chess;
 
 namespace ChessGame
 {
@@ -45,6 +46,17 @@ namespace ChessGame
                 Console.Write(peca);
                 Console.ForegroundColor = aux;
             }
+        }
+
+        public static PosicaoXadrez LerPosicaoXadrez()
+        {
+            string s = Console.ReadLine();
+
+            char coluna = s[0];
+            int linha = int.Parse(s[1].ToString());
+
+            return new PosicaoXadrez(coluna, linha);
+
         }
 
     }
