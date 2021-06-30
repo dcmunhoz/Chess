@@ -11,19 +11,11 @@ namespace ChessGame
         static void Main(string[] args)
         {
 
-            try
-            {
-                Tabuleiro tab = new Tabuleiro(8, 8);
+            PosicaoXadrez pos = new PosicaoXadrez('c', 7);
 
-                tab.ColocarPeca(new Rei(tab, Cor.Branca), new Posicao(1, 1));
-                tab.ColocarPeca(new Rei(tab, Cor.Branca), new Posicao(1, 9));
+            Console.WriteLine(pos);
 
-                Tela.ImprimirTabuleiro(tab);
-            }
-            catch (BoardException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            Console.WriteLine(pos.ToPosicao());
 
 
         }
