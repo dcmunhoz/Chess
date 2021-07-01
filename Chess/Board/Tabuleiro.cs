@@ -61,7 +61,7 @@ namespace Board
 
         public bool PosicaoValida(Posicao pos)
         {
-            if (pos.Linha < 0 || pos.Linha >= this.Linhas || pos.Coluna == 0 || pos.Coluna >= this.Colunas)
+            if (pos.Linha < 0 || pos.Linha >= this.Linhas || pos.Coluna < 0 || pos.Coluna >= this.Colunas)
             {
                 return false;
             }
