@@ -47,6 +47,9 @@ namespace ChessGame
                     }
                 }
 
+                Console.Clear();
+                Tela.ImprimirPartida(partida);
+
             }
             catch (BoardException ex)
             {

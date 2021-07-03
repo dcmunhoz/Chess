@@ -100,10 +100,17 @@ namespace ChessGame
             
             Console.WriteLine();
             Console.WriteLine("Turno   : " + partida.Turno);
-            Console.WriteLine("Jogador : " + partida.JogadorAtual.ToString());
-            if (partida.Xeque)
+            if (! partida.Terminada)
             {
-                Console.WriteLine("XEQUE !");
+                Console.WriteLine("Jogador : " + partida.JogadorAtual.ToString());
+                if (partida.Xeque)
+                {
+                    Console.WriteLine("XEQUE !");
+                }
+            } else
+            {
+                Console.WriteLine("XEQUEMATE!");
+                Console.WriteLine("Vencedor: " + partida.JogadorAtual);
             }
         }
 
