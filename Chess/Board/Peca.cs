@@ -22,6 +22,11 @@ namespace Board
             QtdeMovimentos++;
         }
 
+        public void DecrementarQtdeMovimentos()
+        {
+            QtdeMovimentos--;
+        }
+
         protected bool PodeMover(Posicao pos)
         {
             Peca p = Tabuleiro.Peca(pos);
