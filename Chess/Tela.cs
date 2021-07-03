@@ -91,5 +91,42 @@ namespace ChessGame
 
         }
 
+        public static void ImprimirPartida(PatidaDeXadrez partida)
+        {
+            ImprimirTabuleiro(partida.Tab);
+
+            Console.WriteLine();
+            ImprimirPecasCapturadas(partida);
+            
+            Console.WriteLine();
+            Console.WriteLine("Turno   : " + partida.Turno);
+            Console.WriteLine("Jogador : " + partida.JogadorAtual.ToString());
+        }
+
+        public static void ImprimirPecasCapturadas(PatidaDeXadrez partida)
+        {
+            Console.WriteLine("Pecas Capturadas: ");
+            Console.Write("Brancas: ");
+            ImprimirConjunto(partida.PecasCapturadas(Board.Enums.Cor.Branca));
+            Console.WriteLine();
+
+            Console.Write("Pretas: ");
+            ConsoleColor aux = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            ImprimirConjunto(partida.PecasCapturadas(Board.Enums.Cor.Preta));
+            Console.ForegroundColor = aux;
+            Console.WriteLine();
+        }
+
+        public static void ImprimirConjunto(HashSet<Peca> conjunto)
+        {
+            Console.Write("[");
+            foreach (Peca peca in conjunto)
+            {
+                Console.Write(peca + " ");
+            }
+            Console.Write("]");
+        }
+
     }
 }

@@ -20,10 +20,8 @@ namespace ChessGame
                     try
                     {
                         Console.Clear();
-                        Tela.ImprimirTabuleiro(partida.Tab);
-                        Console.WriteLine();
-                        Console.WriteLine("Turno   : " + partida.Turno);
-                        Console.WriteLine("Jogador : " + partida.JogadorAtual.ToString());
+                        Tela.ImprimirPartida(partida);
+                        
 
                         Console.WriteLine();
                         Console.Write("Origem >: ");
